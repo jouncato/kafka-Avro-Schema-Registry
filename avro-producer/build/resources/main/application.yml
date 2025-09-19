@@ -5,6 +5,8 @@ logging:
 spring:
   main:
     banner-mode: OFF
+  application:
+    name: avro-producer
   kafka:
     bootstrap-servers:
     - localhost:9092

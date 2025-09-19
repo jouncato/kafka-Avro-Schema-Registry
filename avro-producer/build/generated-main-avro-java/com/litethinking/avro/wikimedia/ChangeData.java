@@ -23,10 +23,10 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   private static final SpecificData MODEL$ = new SpecificData();
 
   private static final BinaryMessageEncoder<ChangeData> ENCODER =
-      new BinaryMessageEncoder<ChangeData>(MODEL$, SCHEMA$);
+      new BinaryMessageEncoder<>(MODEL$, SCHEMA$);
 
   private static final BinaryMessageDecoder<ChangeData> DECODER =
-      new BinaryMessageDecoder<ChangeData>(MODEL$, SCHEMA$);
+      new BinaryMessageDecoder<>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageEncoder instance used by this class.
@@ -50,7 +50,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
    * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
   public static BinaryMessageDecoder<ChangeData> createDecoder(SchemaStore resolver) {
-    return new BinaryMessageDecoder<ChangeData>(MODEL$, SCHEMA$, resolver);
+    return new BinaryMessageDecoder<>(MODEL$, SCHEMA$, resolver);
   }
 
   /**
@@ -147,9 +147,14 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     this.parsedcomment = parsedcomment;
   }
 
+  @Override
   public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
+
+  @Override
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
+
   // Used by DatumWriter.  Applications should not call.
+  @Override
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return schema_version;
@@ -177,6 +182,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   // Used by DatumReader.  Applications should not call.
+  @Override
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {

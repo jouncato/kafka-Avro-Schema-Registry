@@ -23,10 +23,10 @@ public class Meta extends org.apache.avro.specific.SpecificRecordBase implements
   private static final SpecificData MODEL$ = new SpecificData();
 
   private static final BinaryMessageEncoder<Meta> ENCODER =
-      new BinaryMessageEncoder<Meta>(MODEL$, SCHEMA$);
+      new BinaryMessageEncoder<>(MODEL$, SCHEMA$);
 
   private static final BinaryMessageDecoder<Meta> DECODER =
-      new BinaryMessageDecoder<Meta>(MODEL$, SCHEMA$);
+      new BinaryMessageDecoder<>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageEncoder instance used by this class.
@@ -50,7 +50,7 @@ public class Meta extends org.apache.avro.specific.SpecificRecordBase implements
    * @return a BinaryMessageDecoder instance for this class backed by the given SchemaStore
    */
   public static BinaryMessageDecoder<Meta> createDecoder(SchemaStore resolver) {
-    return new BinaryMessageDecoder<Meta>(MODEL$, SCHEMA$, resolver);
+    return new BinaryMessageDecoder<>(MODEL$, SCHEMA$, resolver);
   }
 
   /**
@@ -114,9 +114,14 @@ public class Meta extends org.apache.avro.specific.SpecificRecordBase implements
     this.offset = offset;
   }
 
+  @Override
   public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
+
+  @Override
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
+
   // Used by DatumWriter.  Applications should not call.
+  @Override
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return uri;
@@ -133,6 +138,7 @@ public class Meta extends org.apache.avro.specific.SpecificRecordBase implements
   }
 
   // Used by DatumReader.  Applications should not call.
+  @Override
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {

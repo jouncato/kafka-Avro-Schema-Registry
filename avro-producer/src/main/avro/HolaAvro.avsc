@@ -1,6 +1,6 @@
 {
 	"type": "record",
-	"namespace": ""com.litethinking.avro.data",
+	"namespace": "com.litethinking.avro.data",
 	"name": "HolaAvro",
 	"doc": "El Hola mundo de Avro",
 	"fields": [
