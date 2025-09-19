@@ -1,0 +1,27 @@
+{
+	"type": "record",
+	"namespace": "com.litethinking.avro.data",
+	"name": "Avro01",
+	"doc": "Sample default value",
+	"fields": [
+		{
+			"name": "fullName",
+			"type": "string"
+		},
+		{
+			"name": "maritalStatus",
+			"type": "string",
+			"default": "UNKNOWN"
+		},
+		{
+			"name": "active",
+			"type": "boolean",
+			"default": false
+		},
+		{
+			"name": "account",
+			"type": "string",
+			"default": "631b5f04-0fff-4689-adc1-18aec69c294e"
+		}
+	]
+}
