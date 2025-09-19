@@ -1,0 +1,18 @@
+{
+	"type": "record",
+	"namespace": ""com.litethinking.avro.data",
+	"name": "HolaAvro",
+	"doc": "El Hola mundo de Avro",
+	"fields": [
+		{
+			"name": "myStringField",
+			"type": "string",
+			"doc": "Solo es un String"
+		},
+		{
+			"name": "myIntField",
+			"type": "int",
+			"doc": "Solo es un entero"
+		}
+	]
+}

@@ -9,7 +9,7 @@ import com.litethinking.avro.data.Avro01;
 import com.litethinking.kafka.broker.producer.Avro01Producer;
 
 
-//@SpringBootApplication
+@SpringBootApplication
 public class KafkaCoreProducerApplicationAvro01 implements CommandLineRunner {
 
     public static void main(String[] args) {
