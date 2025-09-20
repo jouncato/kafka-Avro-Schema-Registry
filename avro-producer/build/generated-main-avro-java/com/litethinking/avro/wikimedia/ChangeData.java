@@ -14,10 +14,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class ChangeData extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4291312124348119713L;
+  private static final long serialVersionUID = -8061684476172972791L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ChangeData\",\"namespace\":\"com.litethinking.avro.wikimedia\",\"fields\":[{\"name\":\"schema_version\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"meta\",\"type\":{\"type\":\"record\",\"name\":\"Meta\",\"fields\":[{\"name\":\"uri\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"request_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"dt\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"domain\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"stream\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"topic\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"partition\",\"type\":\"int\"},{\"name\":\"offset\",\"type\":\"long\"}]}},{\"name\":\"id\",\"type\":\"long\"},{\"name\":\"type\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"namespace\",\"type\":\"int\"},{\"name\":\"title\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"title_url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timestamp\",\"type\":\"long\"},{\"name\":\"user\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"bot\",\"type\":\"boolean\"},{\"name\":\"notify_url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"minor\",\"type\":\"boolean\"},{\"name\":\"length\",\"type\":{\"type\":\"record\",\"name\":\"Length\",\"fields\":[{\"name\":\"old\",\"type\":\"int\"},{\"name\":\"new\",\"type\":\"int\"}]}},{\"name\":\"revision\",\"type\":{\"type\":\"record\",\"name\":\"Revision\",\"fields\":[{\"name\":\"old\",\"type\":\"long\"},{\"name\":\"new\",\"type\":\"long\"}]}},{\"name\":\"server_url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"server_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"server_script_path\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"wiki\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"parsedcomment\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ChangeData\",\"namespace\":\"com.litethinking.avro.wikimedia\",\"fields\":[{\"name\":\"schema\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"meta\",\"type\":{\"type\":\"record\",\"name\":\"Meta\",\"fields\":[{\"name\":\"uri\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"request_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"dt\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"domain\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"stream\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"topic\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"partition\",\"type\":\"int\"},{\"name\":\"offset\",\"type\":\"long\"}]}},{\"name\":\"id\",\"type\":\"long\"},{\"name\":\"type\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"namespace\",\"type\":\"int\"},{\"name\":\"title\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"title_url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timestamp\",\"type\":\"long\"},{\"name\":\"user\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"bot\",\"type\":\"boolean\"},{\"name\":\"notify_url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"server_url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"server_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"server_script_path\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"wiki\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"parsedcomment\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"minor\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"length\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Length\",\"fields\":[{\"name\":\"old\",\"type\":\"int\"},{\"name\":\"new\",\"type\":\"int\"}]}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Revision\",\"fields\":[{\"name\":\"old\",\"type\":\"long\"},{\"name\":\"new\",\"type\":\"long\"}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -73,7 +73,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     return DECODER.decode(b);
   }
 
-  private java.lang.String schema_version;
+  private java.lang.String schema;
   private com.litethinking.avro.wikimedia.Meta meta;
   private long id;
   private java.lang.String type;
@@ -85,14 +85,14 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   private java.lang.String user;
   private boolean bot;
   private java.lang.String notify_url;
-  private boolean minor;
-  private com.litethinking.avro.wikimedia.Length length;
-  private com.litethinking.avro.wikimedia.Revision revision;
   private java.lang.String server_url;
   private java.lang.String server_name;
   private java.lang.String server_script_path;
   private java.lang.String wiki;
   private java.lang.String parsedcomment;
+  private java.lang.Boolean minor;
+  private com.litethinking.avro.wikimedia.Length length;
+  private com.litethinking.avro.wikimedia.Revision revision;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -103,7 +103,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
 
   /**
    * All-args constructor.
-   * @param schema_version The new value for schema_version
+   * @param schema The new value for schema
    * @param meta The new value for meta
    * @param id The new value for id
    * @param type The new value for type
@@ -115,17 +115,17 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
    * @param user The new value for user
    * @param bot The new value for bot
    * @param notify_url The new value for notify_url
-   * @param minor The new value for minor
-   * @param length The new value for length
-   * @param revision The new value for revision
    * @param server_url The new value for server_url
    * @param server_name The new value for server_name
    * @param server_script_path The new value for server_script_path
    * @param wiki The new value for wiki
    * @param parsedcomment The new value for parsedcomment
+   * @param minor The new value for minor
+   * @param length The new value for length
+   * @param revision The new value for revision
    */
-  public ChangeData(java.lang.String schema_version, com.litethinking.avro.wikimedia.Meta meta, java.lang.Long id, java.lang.String type, java.lang.Integer namespace, java.lang.String title, java.lang.String title_url, java.lang.String comment, java.lang.Long timestamp, java.lang.String user, java.lang.Boolean bot, java.lang.String notify_url, java.lang.Boolean minor, com.litethinking.avro.wikimedia.Length length, com.litethinking.avro.wikimedia.Revision revision, java.lang.String server_url, java.lang.String server_name, java.lang.String server_script_path, java.lang.String wiki, java.lang.String parsedcomment) {
-    this.schema_version = schema_version;
+  public ChangeData(java.lang.String schema, com.litethinking.avro.wikimedia.Meta meta, java.lang.Long id, java.lang.String type, java.lang.Integer namespace, java.lang.String title, java.lang.String title_url, java.lang.String comment, java.lang.Long timestamp, java.lang.String user, java.lang.Boolean bot, java.lang.String notify_url, java.lang.String server_url, java.lang.String server_name, java.lang.String server_script_path, java.lang.String wiki, java.lang.String parsedcomment, java.lang.Boolean minor, com.litethinking.avro.wikimedia.Length length, com.litethinking.avro.wikimedia.Revision revision) {
+    this.schema = schema;
     this.meta = meta;
     this.id = id;
     this.type = type;
@@ -137,14 +137,14 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     this.user = user;
     this.bot = bot;
     this.notify_url = notify_url;
-    this.minor = minor;
-    this.length = length;
-    this.revision = revision;
     this.server_url = server_url;
     this.server_name = server_name;
     this.server_script_path = server_script_path;
     this.wiki = wiki;
     this.parsedcomment = parsedcomment;
+    this.minor = minor;
+    this.length = length;
+    this.revision = revision;
   }
 
   @Override
@@ -157,7 +157,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   @Override
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return schema_version;
+    case 0: return schema;
     case 1: return meta;
     case 2: return id;
     case 3: return type;
@@ -169,14 +169,14 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     case 9: return user;
     case 10: return bot;
     case 11: return notify_url;
-    case 12: return minor;
-    case 13: return length;
-    case 14: return revision;
-    case 15: return server_url;
-    case 16: return server_name;
-    case 17: return server_script_path;
-    case 18: return wiki;
-    case 19: return parsedcomment;
+    case 12: return server_url;
+    case 13: return server_name;
+    case 14: return server_script_path;
+    case 15: return wiki;
+    case 16: return parsedcomment;
+    case 17: return minor;
+    case 18: return length;
+    case 19: return revision;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -186,7 +186,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: schema_version = value$ != null ? value$.toString() : null; break;
+    case 0: schema = value$ != null ? value$.toString() : null; break;
     case 1: meta = (com.litethinking.avro.wikimedia.Meta)value$; break;
     case 2: id = (java.lang.Long)value$; break;
     case 3: type = value$ != null ? value$.toString() : null; break;
@@ -198,33 +198,33 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     case 9: user = value$ != null ? value$.toString() : null; break;
     case 10: bot = (java.lang.Boolean)value$; break;
     case 11: notify_url = value$ != null ? value$.toString() : null; break;
-    case 12: minor = (java.lang.Boolean)value$; break;
-    case 13: length = (com.litethinking.avro.wikimedia.Length)value$; break;
-    case 14: revision = (com.litethinking.avro.wikimedia.Revision)value$; break;
-    case 15: server_url = value$ != null ? value$.toString() : null; break;
-    case 16: server_name = value$ != null ? value$.toString() : null; break;
-    case 17: server_script_path = value$ != null ? value$.toString() : null; break;
-    case 18: wiki = value$ != null ? value$.toString() : null; break;
-    case 19: parsedcomment = value$ != null ? value$.toString() : null; break;
+    case 12: server_url = value$ != null ? value$.toString() : null; break;
+    case 13: server_name = value$ != null ? value$.toString() : null; break;
+    case 14: server_script_path = value$ != null ? value$.toString() : null; break;
+    case 15: wiki = value$ != null ? value$.toString() : null; break;
+    case 16: parsedcomment = value$ != null ? value$.toString() : null; break;
+    case 17: minor = (java.lang.Boolean)value$; break;
+    case 18: length = (com.litethinking.avro.wikimedia.Length)value$; break;
+    case 19: revision = (com.litethinking.avro.wikimedia.Revision)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
   /**
-   * Gets the value of the 'schema_version' field.
-   * @return The value of the 'schema_version' field.
+   * Gets the value of the 'schema' field.
+   * @return The value of the 'schema' field.
    */
-  public java.lang.String getSchemaVersion() {
-    return schema_version;
+  public java.lang.String getSchema$() {
+    return schema;
   }
 
 
   /**
-   * Sets the value of the 'schema_version' field.
+   * Sets the value of the 'schema' field.
    * @param value the value to set.
    */
-  public void setSchemaVersion(java.lang.String value) {
-    this.schema_version = value;
+  public void setSchema$(java.lang.String value) {
+    this.schema = value;
   }
 
   /**
@@ -415,57 +415,6 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
-   * Gets the value of the 'minor' field.
-   * @return The value of the 'minor' field.
-   */
-  public boolean getMinor() {
-    return minor;
-  }
-
-
-  /**
-   * Sets the value of the 'minor' field.
-   * @param value the value to set.
-   */
-  public void setMinor(boolean value) {
-    this.minor = value;
-  }
-
-  /**
-   * Gets the value of the 'length' field.
-   * @return The value of the 'length' field.
-   */
-  public com.litethinking.avro.wikimedia.Length getLength() {
-    return length;
-  }
-
-
-  /**
-   * Sets the value of the 'length' field.
-   * @param value the value to set.
-   */
-  public void setLength(com.litethinking.avro.wikimedia.Length value) {
-    this.length = value;
-  }
-
-  /**
-   * Gets the value of the 'revision' field.
-   * @return The value of the 'revision' field.
-   */
-  public com.litethinking.avro.wikimedia.Revision getRevision() {
-    return revision;
-  }
-
-
-  /**
-   * Sets the value of the 'revision' field.
-   * @param value the value to set.
-   */
-  public void setRevision(com.litethinking.avro.wikimedia.Revision value) {
-    this.revision = value;
-  }
-
-  /**
    * Gets the value of the 'server_url' field.
    * @return The value of the 'server_url' field.
    */
@@ -551,6 +500,57 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'minor' field.
+   * @return The value of the 'minor' field.
+   */
+  public java.lang.Boolean getMinor() {
+    return minor;
+  }
+
+
+  /**
+   * Sets the value of the 'minor' field.
+   * @param value the value to set.
+   */
+  public void setMinor(java.lang.Boolean value) {
+    this.minor = value;
+  }
+
+  /**
+   * Gets the value of the 'length' field.
+   * @return The value of the 'length' field.
+   */
+  public com.litethinking.avro.wikimedia.Length getLength() {
+    return length;
+  }
+
+
+  /**
+   * Sets the value of the 'length' field.
+   * @param value the value to set.
+   */
+  public void setLength(com.litethinking.avro.wikimedia.Length value) {
+    this.length = value;
+  }
+
+  /**
+   * Gets the value of the 'revision' field.
+   * @return The value of the 'revision' field.
+   */
+  public com.litethinking.avro.wikimedia.Revision getRevision() {
+    return revision;
+  }
+
+
+  /**
+   * Sets the value of the 'revision' field.
+   * @param value the value to set.
+   */
+  public void setRevision(com.litethinking.avro.wikimedia.Revision value) {
+    this.revision = value;
+  }
+
+  /**
    * Creates a new ChangeData RecordBuilder.
    * @return A new ChangeData RecordBuilder
    */
@@ -591,7 +591,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<ChangeData>
     implements org.apache.avro.data.RecordBuilder<ChangeData> {
 
-    private java.lang.String schema_version;
+    private java.lang.String schema;
     private com.litethinking.avro.wikimedia.Meta meta;
     private com.litethinking.avro.wikimedia.Meta.Builder metaBuilder;
     private long id;
@@ -604,16 +604,16 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String user;
     private boolean bot;
     private java.lang.String notify_url;
-    private boolean minor;
-    private com.litethinking.avro.wikimedia.Length length;
-    private com.litethinking.avro.wikimedia.Length.Builder lengthBuilder;
-    private com.litethinking.avro.wikimedia.Revision revision;
-    private com.litethinking.avro.wikimedia.Revision.Builder revisionBuilder;
     private java.lang.String server_url;
     private java.lang.String server_name;
     private java.lang.String server_script_path;
     private java.lang.String wiki;
     private java.lang.String parsedcomment;
+    private java.lang.Boolean minor;
+    private com.litethinking.avro.wikimedia.Length length;
+    private com.litethinking.avro.wikimedia.Length.Builder lengthBuilder;
+    private com.litethinking.avro.wikimedia.Revision revision;
+    private com.litethinking.avro.wikimedia.Revision.Builder revisionBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -626,8 +626,8 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
      */
     private Builder(com.litethinking.avro.wikimedia.ChangeData.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.schema_version)) {
-        this.schema_version = data().deepCopy(fields()[0].schema(), other.schema_version);
+      if (isValidValue(fields()[0], other.schema)) {
+        this.schema = data().deepCopy(fields()[0].schema(), other.schema);
         fieldSetFlags()[0] = other.fieldSetFlags()[0];
       }
       if (isValidValue(fields()[1], other.meta)) {
@@ -677,43 +677,43 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
         this.notify_url = data().deepCopy(fields()[11].schema(), other.notify_url);
         fieldSetFlags()[11] = other.fieldSetFlags()[11];
       }
-      if (isValidValue(fields()[12], other.minor)) {
-        this.minor = data().deepCopy(fields()[12].schema(), other.minor);
+      if (isValidValue(fields()[12], other.server_url)) {
+        this.server_url = data().deepCopy(fields()[12].schema(), other.server_url);
         fieldSetFlags()[12] = other.fieldSetFlags()[12];
       }
-      if (isValidValue(fields()[13], other.length)) {
-        this.length = data().deepCopy(fields()[13].schema(), other.length);
+      if (isValidValue(fields()[13], other.server_name)) {
+        this.server_name = data().deepCopy(fields()[13].schema(), other.server_name);
         fieldSetFlags()[13] = other.fieldSetFlags()[13];
+      }
+      if (isValidValue(fields()[14], other.server_script_path)) {
+        this.server_script_path = data().deepCopy(fields()[14].schema(), other.server_script_path);
+        fieldSetFlags()[14] = other.fieldSetFlags()[14];
+      }
+      if (isValidValue(fields()[15], other.wiki)) {
+        this.wiki = data().deepCopy(fields()[15].schema(), other.wiki);
+        fieldSetFlags()[15] = other.fieldSetFlags()[15];
+      }
+      if (isValidValue(fields()[16], other.parsedcomment)) {
+        this.parsedcomment = data().deepCopy(fields()[16].schema(), other.parsedcomment);
+        fieldSetFlags()[16] = other.fieldSetFlags()[16];
+      }
+      if (isValidValue(fields()[17], other.minor)) {
+        this.minor = data().deepCopy(fields()[17].schema(), other.minor);
+        fieldSetFlags()[17] = other.fieldSetFlags()[17];
+      }
+      if (isValidValue(fields()[18], other.length)) {
+        this.length = data().deepCopy(fields()[18].schema(), other.length);
+        fieldSetFlags()[18] = other.fieldSetFlags()[18];
       }
       if (other.hasLengthBuilder()) {
         this.lengthBuilder = com.litethinking.avro.wikimedia.Length.newBuilder(other.getLengthBuilder());
       }
-      if (isValidValue(fields()[14], other.revision)) {
-        this.revision = data().deepCopy(fields()[14].schema(), other.revision);
-        fieldSetFlags()[14] = other.fieldSetFlags()[14];
+      if (isValidValue(fields()[19], other.revision)) {
+        this.revision = data().deepCopy(fields()[19].schema(), other.revision);
+        fieldSetFlags()[19] = other.fieldSetFlags()[19];
       }
       if (other.hasRevisionBuilder()) {
         this.revisionBuilder = com.litethinking.avro.wikimedia.Revision.newBuilder(other.getRevisionBuilder());
-      }
-      if (isValidValue(fields()[15], other.server_url)) {
-        this.server_url = data().deepCopy(fields()[15].schema(), other.server_url);
-        fieldSetFlags()[15] = other.fieldSetFlags()[15];
-      }
-      if (isValidValue(fields()[16], other.server_name)) {
-        this.server_name = data().deepCopy(fields()[16].schema(), other.server_name);
-        fieldSetFlags()[16] = other.fieldSetFlags()[16];
-      }
-      if (isValidValue(fields()[17], other.server_script_path)) {
-        this.server_script_path = data().deepCopy(fields()[17].schema(), other.server_script_path);
-        fieldSetFlags()[17] = other.fieldSetFlags()[17];
-      }
-      if (isValidValue(fields()[18], other.wiki)) {
-        this.wiki = data().deepCopy(fields()[18].schema(), other.wiki);
-        fieldSetFlags()[18] = other.fieldSetFlags()[18];
-      }
-      if (isValidValue(fields()[19], other.parsedcomment)) {
-        this.parsedcomment = data().deepCopy(fields()[19].schema(), other.parsedcomment);
-        fieldSetFlags()[19] = other.fieldSetFlags()[19];
       }
     }
 
@@ -723,8 +723,8 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
      */
     private Builder(com.litethinking.avro.wikimedia.ChangeData other) {
       super(SCHEMA$, MODEL$);
-      if (isValidValue(fields()[0], other.schema_version)) {
-        this.schema_version = data().deepCopy(fields()[0].schema(), other.schema_version);
+      if (isValidValue(fields()[0], other.schema)) {
+        this.schema = data().deepCopy(fields()[0].schema(), other.schema);
         fieldSetFlags()[0] = true;
       }
       if (isValidValue(fields()[1], other.meta)) {
@@ -772,78 +772,78 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
         this.notify_url = data().deepCopy(fields()[11].schema(), other.notify_url);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.minor)) {
-        this.minor = data().deepCopy(fields()[12].schema(), other.minor);
+      if (isValidValue(fields()[12], other.server_url)) {
+        this.server_url = data().deepCopy(fields()[12].schema(), other.server_url);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.length)) {
-        this.length = data().deepCopy(fields()[13].schema(), other.length);
+      if (isValidValue(fields()[13], other.server_name)) {
+        this.server_name = data().deepCopy(fields()[13].schema(), other.server_name);
         fieldSetFlags()[13] = true;
       }
-      this.lengthBuilder = null;
-      if (isValidValue(fields()[14], other.revision)) {
-        this.revision = data().deepCopy(fields()[14].schema(), other.revision);
+      if (isValidValue(fields()[14], other.server_script_path)) {
+        this.server_script_path = data().deepCopy(fields()[14].schema(), other.server_script_path);
         fieldSetFlags()[14] = true;
       }
-      this.revisionBuilder = null;
-      if (isValidValue(fields()[15], other.server_url)) {
-        this.server_url = data().deepCopy(fields()[15].schema(), other.server_url);
+      if (isValidValue(fields()[15], other.wiki)) {
+        this.wiki = data().deepCopy(fields()[15].schema(), other.wiki);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.server_name)) {
-        this.server_name = data().deepCopy(fields()[16].schema(), other.server_name);
+      if (isValidValue(fields()[16], other.parsedcomment)) {
+        this.parsedcomment = data().deepCopy(fields()[16].schema(), other.parsedcomment);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.server_script_path)) {
-        this.server_script_path = data().deepCopy(fields()[17].schema(), other.server_script_path);
+      if (isValidValue(fields()[17], other.minor)) {
+        this.minor = data().deepCopy(fields()[17].schema(), other.minor);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.wiki)) {
-        this.wiki = data().deepCopy(fields()[18].schema(), other.wiki);
+      if (isValidValue(fields()[18], other.length)) {
+        this.length = data().deepCopy(fields()[18].schema(), other.length);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.parsedcomment)) {
-        this.parsedcomment = data().deepCopy(fields()[19].schema(), other.parsedcomment);
+      this.lengthBuilder = null;
+      if (isValidValue(fields()[19], other.revision)) {
+        this.revision = data().deepCopy(fields()[19].schema(), other.revision);
         fieldSetFlags()[19] = true;
       }
+      this.revisionBuilder = null;
     }
 
     /**
-      * Gets the value of the 'schema_version' field.
+      * Gets the value of the 'schema' field.
       * @return The value.
       */
-    public java.lang.String getSchemaVersion() {
-      return schema_version;
+    public java.lang.String getSchema$() {
+      return schema;
     }
 
 
     /**
-      * Sets the value of the 'schema_version' field.
-      * @param value The value of 'schema_version'.
+      * Sets the value of the 'schema' field.
+      * @param value The value of 'schema'.
       * @return This builder.
       */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder setSchemaVersion(java.lang.String value) {
+    public com.litethinking.avro.wikimedia.ChangeData.Builder setSchema$(java.lang.String value) {
       validate(fields()[0], value);
-      this.schema_version = value;
+      this.schema = value;
       fieldSetFlags()[0] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'schema_version' field has been set.
-      * @return True if the 'schema_version' field has been set, false otherwise.
+      * Checks whether the 'schema' field has been set.
+      * @return True if the 'schema' field has been set, false otherwise.
       */
-    public boolean hasSchemaVersion() {
+    public boolean hasSchema$() {
       return fieldSetFlags()[0];
     }
 
 
     /**
-      * Clears the value of the 'schema_version' field.
+      * Clears the value of the 'schema' field.
       * @return This builder.
       */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder clearSchemaVersion() {
-      schema_version = null;
+    public com.litethinking.avro.wikimedia.ChangeData.Builder clearSchema$() {
+      schema = null;
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -1321,10 +1321,210 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     }
 
     /**
+      * Gets the value of the 'server_url' field.
+      * @return The value.
+      */
+    public java.lang.String getServerUrl() {
+      return server_url;
+    }
+
+
+    /**
+      * Sets the value of the 'server_url' field.
+      * @param value The value of 'server_url'.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder setServerUrl(java.lang.String value) {
+      validate(fields()[12], value);
+      this.server_url = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'server_url' field has been set.
+      * @return True if the 'server_url' field has been set, false otherwise.
+      */
+    public boolean hasServerUrl() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'server_url' field.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder clearServerUrl() {
+      server_url = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'server_name' field.
+      * @return The value.
+      */
+    public java.lang.String getServerName() {
+      return server_name;
+    }
+
+
+    /**
+      * Sets the value of the 'server_name' field.
+      * @param value The value of 'server_name'.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder setServerName(java.lang.String value) {
+      validate(fields()[13], value);
+      this.server_name = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'server_name' field has been set.
+      * @return True if the 'server_name' field has been set, false otherwise.
+      */
+    public boolean hasServerName() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'server_name' field.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder clearServerName() {
+      server_name = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'server_script_path' field.
+      * @return The value.
+      */
+    public java.lang.String getServerScriptPath() {
+      return server_script_path;
+    }
+
+
+    /**
+      * Sets the value of the 'server_script_path' field.
+      * @param value The value of 'server_script_path'.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder setServerScriptPath(java.lang.String value) {
+      validate(fields()[14], value);
+      this.server_script_path = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'server_script_path' field has been set.
+      * @return True if the 'server_script_path' field has been set, false otherwise.
+      */
+    public boolean hasServerScriptPath() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'server_script_path' field.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder clearServerScriptPath() {
+      server_script_path = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'wiki' field.
+      * @return The value.
+      */
+    public java.lang.String getWiki() {
+      return wiki;
+    }
+
+
+    /**
+      * Sets the value of the 'wiki' field.
+      * @param value The value of 'wiki'.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder setWiki(java.lang.String value) {
+      validate(fields()[15], value);
+      this.wiki = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'wiki' field has been set.
+      * @return True if the 'wiki' field has been set, false otherwise.
+      */
+    public boolean hasWiki() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'wiki' field.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder clearWiki() {
+      wiki = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'parsedcomment' field.
+      * @return The value.
+      */
+    public java.lang.String getParsedcomment() {
+      return parsedcomment;
+    }
+
+
+    /**
+      * Sets the value of the 'parsedcomment' field.
+      * @param value The value of 'parsedcomment'.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder setParsedcomment(java.lang.String value) {
+      validate(fields()[16], value);
+      this.parsedcomment = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'parsedcomment' field has been set.
+      * @return True if the 'parsedcomment' field has been set, false otherwise.
+      */
+    public boolean hasParsedcomment() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'parsedcomment' field.
+      * @return This builder.
+      */
+    public com.litethinking.avro.wikimedia.ChangeData.Builder clearParsedcomment() {
+      parsedcomment = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'minor' field.
       * @return The value.
       */
-    public boolean getMinor() {
+    public java.lang.Boolean getMinor() {
       return minor;
     }
 
@@ -1334,10 +1534,10 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
       * @param value The value of 'minor'.
       * @return This builder.
       */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder setMinor(boolean value) {
-      validate(fields()[12], value);
+    public com.litethinking.avro.wikimedia.ChangeData.Builder setMinor(java.lang.Boolean value) {
+      validate(fields()[17], value);
       this.minor = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1346,7 +1546,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'minor' field has been set, false otherwise.
       */
     public boolean hasMinor() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1355,7 +1555,8 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.litethinking.avro.wikimedia.ChangeData.Builder clearMinor() {
-      fieldSetFlags()[12] = false;
+      minor = null;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1374,10 +1575,10 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.litethinking.avro.wikimedia.ChangeData.Builder setLength(com.litethinking.avro.wikimedia.Length value) {
-      validate(fields()[13], value);
+      validate(fields()[18], value);
       this.lengthBuilder = null;
       this.length = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1386,7 +1587,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'length' field has been set, false otherwise.
       */
     public boolean hasLength() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[18];
     }
 
     /**
@@ -1431,7 +1632,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     public com.litethinking.avro.wikimedia.ChangeData.Builder clearLength() {
       length = null;
       lengthBuilder = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1450,10 +1651,10 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.litethinking.avro.wikimedia.ChangeData.Builder setRevision(com.litethinking.avro.wikimedia.Revision value) {
-      validate(fields()[14], value);
+      validate(fields()[19], value);
       this.revisionBuilder = null;
       this.revision = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[19] = true;
       return this;
     }
 
@@ -1462,7 +1663,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'revision' field has been set, false otherwise.
       */
     public boolean hasRevision() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[19];
     }
 
     /**
@@ -1507,206 +1708,6 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     public com.litethinking.avro.wikimedia.ChangeData.Builder clearRevision() {
       revision = null;
       revisionBuilder = null;
-      fieldSetFlags()[14] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'server_url' field.
-      * @return The value.
-      */
-    public java.lang.String getServerUrl() {
-      return server_url;
-    }
-
-
-    /**
-      * Sets the value of the 'server_url' field.
-      * @param value The value of 'server_url'.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder setServerUrl(java.lang.String value) {
-      validate(fields()[15], value);
-      this.server_url = value;
-      fieldSetFlags()[15] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'server_url' field has been set.
-      * @return True if the 'server_url' field has been set, false otherwise.
-      */
-    public boolean hasServerUrl() {
-      return fieldSetFlags()[15];
-    }
-
-
-    /**
-      * Clears the value of the 'server_url' field.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder clearServerUrl() {
-      server_url = null;
-      fieldSetFlags()[15] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'server_name' field.
-      * @return The value.
-      */
-    public java.lang.String getServerName() {
-      return server_name;
-    }
-
-
-    /**
-      * Sets the value of the 'server_name' field.
-      * @param value The value of 'server_name'.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder setServerName(java.lang.String value) {
-      validate(fields()[16], value);
-      this.server_name = value;
-      fieldSetFlags()[16] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'server_name' field has been set.
-      * @return True if the 'server_name' field has been set, false otherwise.
-      */
-    public boolean hasServerName() {
-      return fieldSetFlags()[16];
-    }
-
-
-    /**
-      * Clears the value of the 'server_name' field.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder clearServerName() {
-      server_name = null;
-      fieldSetFlags()[16] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'server_script_path' field.
-      * @return The value.
-      */
-    public java.lang.String getServerScriptPath() {
-      return server_script_path;
-    }
-
-
-    /**
-      * Sets the value of the 'server_script_path' field.
-      * @param value The value of 'server_script_path'.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder setServerScriptPath(java.lang.String value) {
-      validate(fields()[17], value);
-      this.server_script_path = value;
-      fieldSetFlags()[17] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'server_script_path' field has been set.
-      * @return True if the 'server_script_path' field has been set, false otherwise.
-      */
-    public boolean hasServerScriptPath() {
-      return fieldSetFlags()[17];
-    }
-
-
-    /**
-      * Clears the value of the 'server_script_path' field.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder clearServerScriptPath() {
-      server_script_path = null;
-      fieldSetFlags()[17] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'wiki' field.
-      * @return The value.
-      */
-    public java.lang.String getWiki() {
-      return wiki;
-    }
-
-
-    /**
-      * Sets the value of the 'wiki' field.
-      * @param value The value of 'wiki'.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder setWiki(java.lang.String value) {
-      validate(fields()[18], value);
-      this.wiki = value;
-      fieldSetFlags()[18] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'wiki' field has been set.
-      * @return True if the 'wiki' field has been set, false otherwise.
-      */
-    public boolean hasWiki() {
-      return fieldSetFlags()[18];
-    }
-
-
-    /**
-      * Clears the value of the 'wiki' field.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder clearWiki() {
-      wiki = null;
-      fieldSetFlags()[18] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'parsedcomment' field.
-      * @return The value.
-      */
-    public java.lang.String getParsedcomment() {
-      return parsedcomment;
-    }
-
-
-    /**
-      * Sets the value of the 'parsedcomment' field.
-      * @param value The value of 'parsedcomment'.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder setParsedcomment(java.lang.String value) {
-      validate(fields()[19], value);
-      this.parsedcomment = value;
-      fieldSetFlags()[19] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'parsedcomment' field has been set.
-      * @return True if the 'parsedcomment' field has been set, false otherwise.
-      */
-    public boolean hasParsedcomment() {
-      return fieldSetFlags()[19];
-    }
-
-
-    /**
-      * Clears the value of the 'parsedcomment' field.
-      * @return This builder.
-      */
-    public com.litethinking.avro.wikimedia.ChangeData.Builder clearParsedcomment() {
-      parsedcomment = null;
       fieldSetFlags()[19] = false;
       return this;
     }
@@ -1716,7 +1717,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
     public ChangeData build() {
       try {
         ChangeData record = new ChangeData();
-        record.schema_version = fieldSetFlags()[0] ? this.schema_version : (java.lang.String) defaultValue(fields()[0]);
+        record.schema = fieldSetFlags()[0] ? this.schema : (java.lang.String) defaultValue(fields()[0]);
         if (metaBuilder != null) {
           try {
             record.meta = this.metaBuilder.build();
@@ -1737,7 +1738,12 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
         record.user = fieldSetFlags()[9] ? this.user : (java.lang.String) defaultValue(fields()[9]);
         record.bot = fieldSetFlags()[10] ? this.bot : (java.lang.Boolean) defaultValue(fields()[10]);
         record.notify_url = fieldSetFlags()[11] ? this.notify_url : (java.lang.String) defaultValue(fields()[11]);
-        record.minor = fieldSetFlags()[12] ? this.minor : (java.lang.Boolean) defaultValue(fields()[12]);
+        record.server_url = fieldSetFlags()[12] ? this.server_url : (java.lang.String) defaultValue(fields()[12]);
+        record.server_name = fieldSetFlags()[13] ? this.server_name : (java.lang.String) defaultValue(fields()[13]);
+        record.server_script_path = fieldSetFlags()[14] ? this.server_script_path : (java.lang.String) defaultValue(fields()[14]);
+        record.wiki = fieldSetFlags()[15] ? this.wiki : (java.lang.String) defaultValue(fields()[15]);
+        record.parsedcomment = fieldSetFlags()[16] ? this.parsedcomment : (java.lang.String) defaultValue(fields()[16]);
+        record.minor = fieldSetFlags()[17] ? this.minor : (java.lang.Boolean) defaultValue(fields()[17]);
         if (lengthBuilder != null) {
           try {
             record.length = this.lengthBuilder.build();
@@ -1746,7 +1752,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
             throw e;
           }
         } else {
-          record.length = fieldSetFlags()[13] ? this.length : (com.litethinking.avro.wikimedia.Length) defaultValue(fields()[13]);
+          record.length = fieldSetFlags()[18] ? this.length : (com.litethinking.avro.wikimedia.Length) defaultValue(fields()[18]);
         }
         if (revisionBuilder != null) {
           try {
@@ -1756,13 +1762,8 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
             throw e;
           }
         } else {
-          record.revision = fieldSetFlags()[14] ? this.revision : (com.litethinking.avro.wikimedia.Revision) defaultValue(fields()[14]);
+          record.revision = fieldSetFlags()[19] ? this.revision : (com.litethinking.avro.wikimedia.Revision) defaultValue(fields()[19]);
         }
-        record.server_url = fieldSetFlags()[15] ? this.server_url : (java.lang.String) defaultValue(fields()[15]);
-        record.server_name = fieldSetFlags()[16] ? this.server_name : (java.lang.String) defaultValue(fields()[16]);
-        record.server_script_path = fieldSetFlags()[17] ? this.server_script_path : (java.lang.String) defaultValue(fields()[17]);
-        record.wiki = fieldSetFlags()[18] ? this.wiki : (java.lang.String) defaultValue(fields()[18]);
-        record.parsedcomment = fieldSetFlags()[19] ? this.parsedcomment : (java.lang.String) defaultValue(fields()[19]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
@@ -1795,7 +1796,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   @Override public void customEncode(org.apache.avro.io.Encoder out)
     throws java.io.IOException
   {
-    out.writeString(this.schema_version);
+    out.writeString(this.schema);
 
     this.meta.customEncode(out);
 
@@ -1819,12 +1820,6 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
 
     out.writeString(this.notify_url);
 
-    out.writeBoolean(this.minor);
-
-    this.length.customEncode(out);
-
-    this.revision.customEncode(out);
-
     out.writeString(this.server_url);
 
     out.writeString(this.server_name);
@@ -1835,6 +1830,30 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
 
     out.writeString(this.parsedcomment);
 
+    if (this.minor == null) {
+      out.writeIndex(0);
+      out.writeNull();
+    } else {
+      out.writeIndex(1);
+      out.writeBoolean(this.minor);
+    }
+
+    if (this.length == null) {
+      out.writeIndex(0);
+      out.writeNull();
+    } else {
+      out.writeIndex(1);
+      this.length.customEncode(out);
+    }
+
+    if (this.revision == null) {
+      out.writeIndex(0);
+      out.writeNull();
+    } else {
+      out.writeIndex(1);
+      this.revision.customEncode(out);
+    }
+
   }
 
   @Override public void customDecode(org.apache.avro.io.ResolvingDecoder in)
@@ -1842,7 +1861,7 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
   {
     org.apache.avro.Schema.Field[] fieldOrder = in.readFieldOrderIfDiff();
     if (fieldOrder == null) {
-      this.schema_version = in.readString();
+      this.schema = in.readString();
 
       if (this.meta == null) {
         this.meta = new com.litethinking.avro.wikimedia.Meta();
@@ -1869,18 +1888,6 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
 
       this.notify_url = in.readString();
 
-      this.minor = in.readBoolean();
-
-      if (this.length == null) {
-        this.length = new com.litethinking.avro.wikimedia.Length();
-      }
-      this.length.customDecode(in);
-
-      if (this.revision == null) {
-        this.revision = new com.litethinking.avro.wikimedia.Revision();
-      }
-      this.revision.customDecode(in);
-
       this.server_url = in.readString();
 
       this.server_name = in.readString();
@@ -1891,11 +1898,38 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
 
       this.parsedcomment = in.readString();
 
+      if (in.readIndex() != 1) {
+        in.readNull();
+        this.minor = null;
+      } else {
+        this.minor = in.readBoolean();
+      }
+
+      if (in.readIndex() != 1) {
+        in.readNull();
+        this.length = null;
+      } else {
+        if (this.length == null) {
+          this.length = new com.litethinking.avro.wikimedia.Length();
+        }
+        this.length.customDecode(in);
+      }
+
+      if (in.readIndex() != 1) {
+        in.readNull();
+        this.revision = null;
+      } else {
+        if (this.revision == null) {
+          this.revision = new com.litethinking.avro.wikimedia.Revision();
+        }
+        this.revision.customDecode(in);
+      }
+
     } else {
       for (int i = 0; i < 20; i++) {
         switch (fieldOrder[i].pos()) {
         case 0:
-          this.schema_version = in.readString();
+          this.schema = in.readString();
           break;
 
         case 1:
@@ -1946,41 +1980,56 @@ public class ChangeData extends org.apache.avro.specific.SpecificRecordBase impl
           break;
 
         case 12:
-          this.minor = in.readBoolean();
-          break;
-
-        case 13:
-          if (this.length == null) {
-            this.length = new com.litethinking.avro.wikimedia.Length();
-          }
-          this.length.customDecode(in);
-          break;
-
-        case 14:
-          if (this.revision == null) {
-            this.revision = new com.litethinking.avro.wikimedia.Revision();
-          }
-          this.revision.customDecode(in);
-          break;
-
-        case 15:
           this.server_url = in.readString();
           break;
 
-        case 16:
+        case 13:
           this.server_name = in.readString();
           break;
 
-        case 17:
+        case 14:
           this.server_script_path = in.readString();
           break;
 
-        case 18:
+        case 15:
           this.wiki = in.readString();
           break;
 
-        case 19:
+        case 16:
           this.parsedcomment = in.readString();
+          break;
+
+        case 17:
+          if (in.readIndex() != 1) {
+            in.readNull();
+            this.minor = null;
+          } else {
+            this.minor = in.readBoolean();
+          }
+          break;
+
+        case 18:
+          if (in.readIndex() != 1) {
+            in.readNull();
+            this.length = null;
+          } else {
+            if (this.length == null) {
+              this.length = new com.litethinking.avro.wikimedia.Length();
+            }
+            this.length.customDecode(in);
+          }
+          break;
+
+        case 19:
+          if (in.readIndex() != 1) {
+            in.readNull();
+            this.revision = null;
+          } else {
+            if (this.revision == null) {
+              this.revision = new com.litethinking.avro.wikimedia.Revision();
+            }
+            this.revision.customDecode(in);
+          }
           break;
 
         default:

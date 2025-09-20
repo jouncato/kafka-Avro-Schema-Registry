@@ -10,7 +10,7 @@ import com.litethinking.avro.data.Avro01;
 public class Avro01Producer {
 
 	@Autowired
-	private KafkaTemplate<String, Avro01> kafkaTemplate;
+	private KafkaTemplate<String, Object> kafkaTemplate;
 	
 	public void send(Avro01 data) {
 		kafkaTemplate.send("topic-schema-avro-01", data);

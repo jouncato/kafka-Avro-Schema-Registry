@@ -10,10 +10,10 @@ import com.litethinking.avro.data.PersonPostgresql;
 public class PersonProducer {
 
 	@Autowired
-	private KafkaTemplate<String, PersonPostgresql> kafkaTemplate;
+	private KafkaTemplate<String, PersonPostgresql> personKafkaTemplate;
 	
 	public void publish(PersonPostgresql data) {
-		kafkaTemplate.send("topic-person-address-postgresql-fake", data);
+		personKafkaTemplate.send("topic-person-address-fake", data);
 	}
 	
 }

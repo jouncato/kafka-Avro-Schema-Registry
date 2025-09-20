@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.litethinking.avro.data.PersonPostgresql;
 
-@Service
+//@Service
 public class PersonConsumer {
 
 	private static final Logger LOG = LoggerFactory.getLogger(PersonConsumer.class);

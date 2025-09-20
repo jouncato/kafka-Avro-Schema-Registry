@@ -10,7 +10,7 @@ import com.github.javafaker.Faker;
 import com.litethinking.avro.data.PersonPostgresql;
 import com.litethinking.kafka.broker.producer.PersonProducer;
 
-@Service
+//@Service
 public class PersonAddressScheduler {
 
 	private Faker faker = Faker.instance();

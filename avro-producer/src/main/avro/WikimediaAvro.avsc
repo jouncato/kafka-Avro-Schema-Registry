@@ -30,7 +30,7 @@
         "type": "record",
         "name": "ChangeData",
         "fields": [
-          { "name": "schema_version", "type": "string" },  
+          { "name": "schema", "type": "string" },
           {
             "name": "meta",
             "type": {
@@ -59,34 +59,36 @@
           { "name": "user", "type": "string" },
           { "name": "bot", "type": "boolean" },
           { "name": "notify_url", "type": "string" },
-          { "name": "minor", "type": "boolean" },
+          { "name": "server_url", "type": "string" },
+          { "name": "server_name", "type": "string" },
+          { "name": "server_script_path", "type": "string" },
+          { "name": "wiki", "type": "string" },
+          { "name": "parsedcomment", "type": "string" },
+          { "name": "minor", "type": ["null", "boolean"], "default": null },
           {
             "name": "length",
-            "type": {
+            "type": ["null", {
               "type": "record",
               "name": "Length",
               "fields": [
                 { "name": "old", "type": "int" },
                 { "name": "new", "type": "int" }
               ]
-            }
+            }],
+            "default": null
           },
           {
             "name": "revision",
-            "type": {
+            "type": ["null", {
               "type": "record",
               "name": "Revision",
               "fields": [
                 { "name": "old", "type": "long" },
                 { "name": "new", "type": "long" }
               ]
-            }
-          },
-          { "name": "server_url", "type": "string" },
-          { "name": "server_name", "type": "string" },
-          { "name": "server_script_path", "type": "string" },
-          { "name": "wiki", "type": "string" },
-          { "name": "parsedcomment", "type": "string" }
+            }],
+            "default": null
+          }
         ]
       }
     }

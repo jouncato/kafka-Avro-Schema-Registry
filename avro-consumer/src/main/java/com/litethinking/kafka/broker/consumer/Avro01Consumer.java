@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.litethinking.avro.data.Avro01;
 
-//@Service
+@Service
 public class Avro01Consumer {
 
 	private static final Logger LOG = LoggerFactory.getLogger(Avro01Consumer.class);

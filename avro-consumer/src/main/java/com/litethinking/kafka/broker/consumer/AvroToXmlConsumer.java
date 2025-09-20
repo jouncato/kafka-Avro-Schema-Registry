@@ -1,5 +1,6 @@
 package com.litethinking.kafka.broker.consumer;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.litethinking.avro.data.Avro01;
@@ -9,11 +10,23 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-@Service
+//@Service
 public class AvroToXmlConsumer {
 
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    // MixIn para ignorar el campo "schema"
+    public abstract static class Avro01MixIn {
+        @JsonIgnore
+        abstract org.apache.avro.Schema getSchema();
+    }
+
+    private final ObjectMapper objectMapper;
     private final XmlMapper xmlMapper = new XmlMapper();
+
+    public AvroToXmlConsumer() {
+        objectMapper = new ObjectMapper();
+        // Aplica el MixIn
+        objectMapper.addMixIn(Avro01.class, Avro01MixIn.class);
+    }
 
     @KafkaListener(topics = "topic-schema-avro-01", groupId = "avro-xml-group")
     public void consumeAvroMessage(ConsumerRecord<String, Avro01> record) {
