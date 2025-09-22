@@ -10,7 +10,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
-import com.litethinking.avro.data.PersonPostgresql;
+import com.litethinking.avro.data.PersonAddress;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,7 +47,7 @@ public class KafkaConfig {
     }
 
     @Bean
-    public ProducerFactory<String, PersonPostgresql> personProducerFactory() {
+    public ProducerFactory<String, PersonAddress> personProducerFactory() {
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
@@ -64,7 +64,7 @@ public class KafkaConfig {
     }
 
     @Bean
-    public KafkaTemplate<String, PersonPostgresql> personKafkaTemplate() {
+    public KafkaTemplate<String, PersonAddress> personKafkaTemplate() {
         return new KafkaTemplate<>(personProducerFactory());
     }
 }

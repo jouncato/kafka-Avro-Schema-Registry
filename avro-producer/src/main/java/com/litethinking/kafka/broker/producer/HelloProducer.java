@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.litethinking.avro.data.HolaAvro;
 
-@Service
+//@Service
 public class HelloProducer {
 
     @Autowired

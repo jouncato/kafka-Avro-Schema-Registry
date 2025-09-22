@@ -20,7 +20,7 @@ public class EmployeeBackwardApp {
 	}
 
 	private static void writeUsingV1(File toFile) {
-		var data = EmployeeBackwardV1.newBuilder().setFirstName("Diana").setLastName("Prince").build();
+		var data = EmployeeBackwardV1.newBuilder().setFirstName("Joel").setLastName("Paez").build();
 		var datumWriter = new SpecificDatumWriter<>(EmployeeBackwardV1.class);
 
 		try (var dataWriter = new DataFileWriter<>(datumWriter)) {

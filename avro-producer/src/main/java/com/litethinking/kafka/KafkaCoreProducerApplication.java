@@ -10,8 +10,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import com.litethinking.kafka.broker.producer.HelloProducer;
 import com.litethinking.avro.data.HolaAvro;
 
-@SpringBootApplication
-@EnableScheduling
+//@SpringBootApplication
+//@EnableScheduling
 public class KafkaCoreProducerApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
@@ -32,6 +32,7 @@ public class KafkaCoreProducerApplication implements CommandLineRunner {
     public void sendScheduledMessage() {
         if (!keepSending) return;
 
+        // Super importante el nombre en AVRO debe coincidir con el del schema registrado en el Schema Registry
         HolaAvro data = HolaAvro.newBuilder()
             .setMyStringField("Mensaje aleatorio " + ThreadLocalRandom.current().nextInt())
             .setMyIntField(ThreadLocalRandom.current().nextInt(0, 1000))

@@ -21,8 +21,8 @@ public class EmployeeForwardApp {
 	}
 
 	private static void writeUsingV2(File toFile) {
-		var data = EmployeeForwardV2.newBuilder().setFirstName("Clark").setLastName("Kent")
-				.setEmail("clark.kent@dc.com").build();
+		var data = EmployeeForwardV2.newBuilder().setFirstName("Joel").setLastName("Paez")
+				.setEmail("joel.paez@gmail.com").build();
 		var datumWriter = new SpecificDatumWriter<>(EmployeeForwardV2.class);
 
 		try (var dataWriter = new DataFileWriter<>(datumWriter)) {

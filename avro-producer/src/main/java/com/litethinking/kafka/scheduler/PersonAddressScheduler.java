@@ -7,10 +7,10 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import com.github.javafaker.Faker;
-import com.litethinking.avro.data.PersonPostgresql;
+import com.litethinking.avro.data.PersonAddress;
 import com.litethinking.kafka.broker.producer.PersonProducer;
 
-//@Service
+@Service
 public class PersonAddressScheduler {
 
 	private Faker faker = Faker.instance();
@@ -19,19 +19,19 @@ public class PersonAddressScheduler {
 	private PersonProducer producer;
 
 	//Dummy Data se crea
-	private PersonPostgresql fakePerson() {
-		var person = new PersonPostgresql();
+private PersonAddress fakePerson() {
+    var person = new PersonAddress();
 
-		person.setPersonId(Integer.toString(ThreadLocalRandom.current().nextInt(1, 1000000)));
-		person.setEmail(faker.internet().emailAddress());
-		person.setFullName(faker.name().fullName());
-		person.setAddressId(Integer.toString(ThreadLocalRandom.current().nextInt(1, 1000000)));
-		person.setAddress(faker.address().streetAddress());
-		person.setCity(faker.address().city());
-		person.setPostalCode(faker.address().zipCode());
+    person.setPersonId(Integer.toString(ThreadLocalRandom.current().nextInt(1, 1000000)));
+    person.setEmail(faker.internet().emailAddress());
+    person.setFullName(faker.name().fullName());
+    person.setAddressId(Integer.toString(ThreadLocalRandom.current().nextInt(1, 1000000)));
+    person.setAddress(faker.address().streetAddress());
+    person.setCity(faker.address().city());
+    person.setPostalCode(faker.address().zipCode());
 
-		return person;
-	}
+    return person;
+}
 	
 	@Scheduled(fixedRate = 2000)
 	public void publishFakePerson() {

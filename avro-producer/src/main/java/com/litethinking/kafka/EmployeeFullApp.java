@@ -31,7 +31,7 @@ public class EmployeeFullApp {
 	}
 
 	private static void writeUsingV1(File toFile) {
-		var data = EmployeeFullV1.newBuilder().setFirstName("Clark").build();
+		var data = EmployeeFullV1.newBuilder().setFirstName("Joel").build();
 		var datumWriter = new SpecificDatumWriter<>(EmployeeFullV1.class);
 
 		try (var dataWriter = new DataFileWriter<>(datumWriter)) {
@@ -46,7 +46,7 @@ public class EmployeeFullApp {
 	}
 
 	private static void writeUsingV2(File toFile) {
-		var data = EmployeeFullV2.newBuilder().setFirstName("Clark").build();
+		var data = EmployeeFullV2.newBuilder().setFirstName("Joel").build();
 		var datumWriter = new SpecificDatumWriter<>(EmployeeFullV2.class);
 
 		try (var dataWriter = new DataFileWriter<>(datumWriter)) {

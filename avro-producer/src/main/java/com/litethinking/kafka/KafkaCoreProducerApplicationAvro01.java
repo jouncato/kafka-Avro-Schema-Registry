@@ -10,8 +10,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import com.litethinking.avro.data.Avro01;
 import com.litethinking.kafka.broker.producer.Avro01Producer;
 
-//@SpringBootApplication
-//@EnableScheduling 
+@SpringBootApplication
+@EnableScheduling 
 public class KafkaCoreProducerApplicationAvro01 implements CommandLineRunner {
 
     public static void main(String[] args) {
